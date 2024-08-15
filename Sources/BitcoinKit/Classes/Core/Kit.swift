@@ -1,8 +1,8 @@
 import BitcoinCore
 import Foundation
-import HdWalletKit
+import HDWalletKit
 import Hodler
-import HsToolKit
+import WWToolKit
 
 public class Kit: AbstractKit {
     private static let heightInterval = 2016 // Default block count in difficulty change circle ( Bitcoin )

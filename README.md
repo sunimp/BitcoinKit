@@ -9,7 +9,7 @@
 First, you nead an instance of *BitcoinKit.Kit* class. You can initialize it with Mnemonic seed or BIP32 extended key (private or public). To generate seed from mnemonic seed phrase you can use [HdWalletKit.Swift](https://github.com/horizontalsystems/HdWalletKit.Swift) to convert a word list to a seed.
 
 ```swift
-import HdWalletKit
+import HDWalletKit
 
 let words = ["mnemonic", "phrase", "words"]
 let passphrase: String = ""

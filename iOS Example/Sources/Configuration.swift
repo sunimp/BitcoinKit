@@ -1,6 +1,6 @@
 import BitcoinCore
-import HdWalletKit
-import HsToolKit
+import HDWalletKit
+import WWToolKit
 
 class Configuration {
     static let shared = Configuration()

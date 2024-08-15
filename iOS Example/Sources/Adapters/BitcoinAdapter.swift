@@ -1,8 +1,8 @@
 import BitcoinCore
 import BitcoinKit
 import Foundation
-import HdWalletKit
-import HsToolKit
+import HDWalletKit
+import WWToolKit
 
 class BitcoinAdapter: BaseAdapter {
     let bitcoinKit: Kit

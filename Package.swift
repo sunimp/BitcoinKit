@@ -1,4 +1,4 @@
-// swift-tools-version:5.5
+// swift-tools-version:5.10
 
 import PackageDescription
 
@@ -14,10 +14,10 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/horizontalsystems/BitcoinCore.Swift.git", .upToNextMajor(from: "3.0.0")),
-        .package(url: "https://github.com/horizontalsystems/Hodler.Swift.git", .upToNextMajor(from: "2.0.1")),
-        .package(url: "https://github.com/horizontalsystems/HdWalletKit.Swift.git", .upToNextMajor(from: "1.2.1")),
-        .package(url: "https://github.com/horizontalsystems/HsToolKit.Swift.git", .upToNextMajor(from: "2.0.5")),
+        .package(url: "https://github.com/sunimp/BitcoinCore.Swift.git", .upToNextMajor(from: "3.0.2")),
+        .package(url: "https://github.com/sunimp/Hodler.Swift.git", .upToNextMajor(from: "2.0.3")),
+        .package(url: "https://github.com/sunimp/HDWalletKit.Swift.git", .upToNextMajor(from: "1.3.2")),
+        .package(url: "https://github.com/sunimp/WWToolKit.Swift.git", .upToNextMajor(from: "2.0.6")),
     ],
     targets: [
         .target(
@@ -25,8 +25,8 @@ let package = Package(
             dependencies: [
                 .product(name: "BitcoinCore", package: "BitcoinCore.Swift"),
                 .product(name: "Hodler", package: "Hodler.Swift"),
-                .product(name: "HdWalletKit", package: "HdWalletKit.Swift"),
-                .product(name: "HsToolKit", package: "HsToolKit.Swift"),
+                .product(name: "HDWalletKit", package: "HDWalletKit.Swift"),
+                .product(name: "WWToolKit", package: "WWToolKit.Swift"),
             ]
         ),
     ]

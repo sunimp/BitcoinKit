@@ -1,8 +1,8 @@
 import BitcoinCore
 import Combine
 import Foundation
-import HdWalletKit
-import HsToolKit
+import HDWalletKit
+import WWToolKit
 
 class Manager {
     static let shared = Manager()
