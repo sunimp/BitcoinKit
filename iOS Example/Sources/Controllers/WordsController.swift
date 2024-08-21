@@ -1,5 +1,14 @@
-import HDWalletKit
+//
+//  TransactionsController.swift
+//  BitcoinKit-Example
+//
+//  Created by Sun on 2024/8/21.
+//
+
 import UIKit
+
+import HDWalletKit
+import UIExtensions
 
 class WordsController: UIViewController {
     @IBOutlet var textView: UITextView?
@@ -55,7 +64,7 @@ class WordsController: UIViewController {
         let successBlock = { [weak self] in
             Manager.shared.login(restoreData: text, syncModeIndex: self?.syncModeListControl.selectedSegmentIndex ?? 0)
 
-            if let window = UIApplication.shared.windows.filter(\.isKeyWindow).first {
+            if let window = UIApplication.shared.activeWindow {
                 let mainController = MainController()
                 UIView.transition(with: window, duration: 0.5, options: .transitionCrossDissolve, animations: {
                     window.rootViewController = mainController

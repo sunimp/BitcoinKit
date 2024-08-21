@@ -1,12 +1,12 @@
 # BitcoinKit.Swift
 
-`BitcoinKit.Swift` is a package that extends [BitcoinCore.Swift](https://github.com/horizontalsystems/BitcoinCore.Swift) and makes it usable with `Bitcoin` Mainnet and Testnet networks.
+`BitcoinKit.Swift` is a package that extends [BitcoinCore.Swift](https://github.com/sunimp/BitcoinCore.Swift) and makes it usable with `Bitcoin` Mainnet and Testnet networks.
 
 ## Usage
 
 ### Initialization
 
-First, you nead an instance of *BitcoinKit.Kit* class. You can initialize it with Mnemonic seed or BIP32 extended key (private or public). To generate seed from mnemonic seed phrase you can use [HdWalletKit.Swift](https://github.com/horizontalsystems/HdWalletKit.Swift) to convert a word list to a seed.
+First, you nead an instance of *BitcoinKit.Kit* class. You can initialize it with Mnemonic seed or BIP32 extended key (private or public). To generate seed from mnemonic seed phrase you can use [HDWalletKit.Swift](https://github.com/sunimp/HDWalletKit.Swift) to convert a word list to a seed.
 
 ```swift
 import HDWalletKit
@@ -92,7 +92,7 @@ print(balance.spendable)
 print(balance.unspendable)
 ```
 
-Unspendable balance is non-zero if you have UTXO that is currently not spendable due to some custom unlock script. These custom scripts can be implemented as a plugin, like [Hodler](https://github.com/horizontalsystems/Hodler.Swift)
+Unspendable balance is non-zero if you have UTXO that is currently not spendable due to some custom unlock script. These custom scripts can be implemented as a plugin, like [Hodler](https://github.com/sunimp/Hodler.Swift)
 
 #### Last Block Info
 
@@ -301,7 +301,7 @@ extension Manager: BitcoinCoreDelegate {
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/horizontalsystems/BitcoinKit.Swift.git", .upToNextMajor(from: "1.0.0"))
+    .package(url: "https://github.com/sunimp/BitcoinKit.Swift.git", .upToNextMajor(from: "3.0.3"))
 ]
 ```
 
@@ -311,5 +311,5 @@ All features of the library are used in example project. It can be referred as a
 
 ## License
 
-The `BitcoinKit` toolkit is open source and available under the terms of the [MIT License](https://github.com/horizontalsystems/BitcoinKit.Swift/blob/master/LICENSE).
+The `BitcoinKit` toolkit is open source and available under the terms of the [MIT License](https://github.com/sunimp/BitcoinKit.Swift/blob/master/LICENSE).
 
