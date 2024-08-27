@@ -15,10 +15,10 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/sunimp/BitcoinCore.Swift.git", .upToNextMajor(from: "3.1.0")),
-        .package(url: "https://github.com/sunimp/Hodler.Swift.git", .upToNextMajor(from: "2.0.5")),
-        .package(url: "https://github.com/sunimp/HDWalletKit.Swift.git", .upToNextMajor(from: "1.3.5")),
-        .package(url: "https://github.com/sunimp/WWToolKit.Swift.git", .upToNextMajor(from: "2.1.1")),
+        .package(url: "https://github.com/sunimp/BitcoinCore.Swift.git", .upToNextMajor(from: "3.1.1")),
+        .package(url: "https://github.com/sunimp/Hodler.Swift.git", .upToNextMajor(from: "2.0.6")),
+        .package(url: "https://github.com/sunimp/HDWalletKit.Swift.git", .upToNextMajor(from: "1.3.6")),
+        .package(url: "https://github.com/sunimp/WWToolKit.Swift.git", .upToNextMajor(from: "2.1.2")),
         .package(url: "https://github.com/nicklockwood/SwiftFormat.git", from: "0.54.0"),
     ],
     targets: [

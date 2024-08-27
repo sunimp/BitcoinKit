@@ -23,7 +23,7 @@ class RegTest: INetwork {
     let coinType: UInt32 = 1
     let sigHash: SigHashType = .bitcoinAll
     var syncableFromApi = false
-    var blockchairChainID = ""
+    var blockchairChainId = ""
 
     let dnsSeeds = [
         "btc-regtest.horizontalsystems.xyz",

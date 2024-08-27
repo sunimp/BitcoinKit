@@ -23,7 +23,7 @@ public class MainNet: INetwork {
     public let coinType: UInt32 = 0
     public let sigHash: SigHashType = .bitcoinAll
     public var syncableFromApi = true
-    public var blockchairChainID = "bitcoin"
+    public var blockchairChainId = "bitcoin"
 
     public let dnsSeeds = [
         "x5.seed.bitcoin.sipa.be", // Pieter Wuille
