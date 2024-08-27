@@ -15,15 +15,15 @@ class RegTest: INetwork {
     let pubKeyHash: UInt8 = 0x6F
     let privateKey: UInt8 = 0xEF
     let scriptHash: UInt8 = 0xC4
-    let bech32PrefixPattern: String = "bcrt"
+    let bech32PrefixPattern = "bcrt"
     let xPubKey: UInt32 = 0x0435_87CF
     let xPrivKey: UInt32 = 0x0435_8394
     let magic: UInt32 = 0xFABF_B5DA
     let port = 18444
     let coinType: UInt32 = 1
     let sigHash: SigHashType = .bitcoinAll
-    var syncableFromApi: Bool = false
-    var blockchairChainId: String = ""
+    var syncableFromApi = false
+    var blockchairChainID = ""
 
     let dnsSeeds = [
         "btc-regtest.horizontalsystems.xyz",
@@ -32,5 +32,6 @@ class RegTest: INetwork {
         "btc03-regtest.horizontalsystems.xyz",
     ]
 
-    let dustRelayTxFee = 3000 // https://github.com/bitcoin/bitcoin/blob/c536dfbcb00fb15963bf5d507b7017c241718bf6/src/policy/policy.h#L50
+    let dustRelayTxFee =
+        3000 // https://github.com/bitcoin/bitcoin/blob/c536dfbcb00fb15963bf5d507b7017c241718bf6/src/policy/policy.h#L50
 }
