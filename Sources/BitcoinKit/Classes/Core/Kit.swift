@@ -54,7 +54,7 @@ public class Kit: AbstractKit {
     ) throws {
         let network = networkType.network
         let logger = logger ?? Logger(minLogLevel: .verbose)
-        let databaseFilePath = try DirectoryHelper.directoryURL(for: Kit.name).appendingPathComponent(Kit.databaseFileName(
+        let databaseFilePath = try DirectoryHelper.directoryUrl(for: Kit.name).appendingPathComponent(Kit.databaseFileName(
             walletId: walletId,
             networkType: networkType,
             purpose: purpose,
