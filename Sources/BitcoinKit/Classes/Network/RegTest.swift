@@ -1,8 +1,7 @@
 //
 //  RegTest.swift
-//  BitcoinKit
 //
-//  Created by Sun on 2024/8/21.
+//  Created by Sun on 2018/8/23.
 //
 
 import Foundation
@@ -16,14 +15,14 @@ class RegTest: INetwork {
     let privateKey: UInt8 = 0xEF
     let scriptHash: UInt8 = 0xC4
     let bech32PrefixPattern = "bcrt"
-    let xPubKey: UInt32 = 0x0435_87CF
-    let xPrivKey: UInt32 = 0x0435_8394
-    let magic: UInt32 = 0xFABF_B5DA
+    let xPubKey: UInt32 = 0x043587CF
+    let xPrivKey: UInt32 = 0x04358394
+    let magic: UInt32 = 0xFABFB5DA
     let port = 18444
     let coinType: UInt32 = 1
     let sigHash: SigHashType = .bitcoinAll
     var syncableFromApi = false
-    var blockchairChainId = ""
+    var blockchairChainID = ""
 
     let dnsSeeds = [
         "btc-regtest.horizontalsystems.xyz",

@@ -21,7 +21,7 @@ class BitcoinAdapter: BaseAdapter {
             fatalError("Cant create BitcoinSeed")
         }
 
-        bitcoinKit = try! Kit(seed: seed, purpose: purpose, walletId: "walletId", syncMode: syncMode, networkType: networkType, confirmationsThreshold: 1, logger: logger.scoped(with: "BitcoinKit"))
+        bitcoinKit = try! Kit(seed: seed, purpose: purpose, walletID: "walletID", syncMode: syncMode, networkType: networkType, confirmationsThreshold: 1, logger: logger.scoped(with: "BitcoinKit"))
 
         super.init(name: "Bitcoin", coinCode: "BTC", abstractKit: bitcoinKit)
         bitcoinKit.delegate = self
@@ -31,7 +31,7 @@ class BitcoinAdapter: BaseAdapter {
         let networkType: Kit.NetworkType = testMode ? .testNet : .mainNet
 
         let extendedKey = try! HDExtendedKey(extendedKey: extendedKey)
-        bitcoinKit = try! Kit(extendedKey: extendedKey, purpose: purpose, walletId: "walletId", syncMode: syncMode, networkType: networkType, confirmationsThreshold: 1, logger: logger.scoped(with: "BitcoinKit"))
+        bitcoinKit = try! Kit(extendedKey: extendedKey, purpose: purpose, walletID: "walletID", syncMode: syncMode, networkType: networkType, confirmationsThreshold: 1, logger: logger.scoped(with: "BitcoinKit"))
 
         super.init(name: "Bitcoin", coinCode: "BTC", abstractKit: bitcoinKit)
         bitcoinKit.delegate = self

@@ -163,7 +163,7 @@ A sample dump:
 //                changeOutput = true
 //                value = 69217
 //                address = "38Ckn9tueUqTB8oy7UBWe1Gzy6uJpLZNep"
-//                pluginId = nil
+//                pluginID = nil
 //                pluginData = nil
 //                pluginDataString = nil
 //            }
@@ -172,7 +172,7 @@ A sample dump:
 //                changeOutput = false
 //                value = 5976
 //                address = "3N5r5te5617JcBftWt34nTC9sJ7ofL3rmS"
-//                pluginId = nil
+//                pluginID = nil
 //                pluginData = nil
 //                pluginDataString = nil
 //            }
@@ -289,11 +289,11 @@ extension Manager: BitcoinCoreDelegate {
 }
 ```
 
-## Prerequisites
+## Requirements
 
-* Xcode 15.0+
+* Xcode 15.4+
 * Swift 5.10+
-* iOS 14+
+* iOS 14.0+
 
 ## Installation
 
@@ -301,7 +301,7 @@ extension Manager: BitcoinCoreDelegate {
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/sunimp/BitcoinKit.Swift.git", .upToNextMajor(from: "3.1.2"))
+    .package(url: "https://github.com/sunimp/BitcoinKit.Swift.git", .upToNextMajor(from: "3.2.0"))
 ]
 ```
 

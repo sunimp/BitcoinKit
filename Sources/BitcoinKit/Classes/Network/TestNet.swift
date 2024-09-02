@@ -1,8 +1,7 @@
 //
 //  TestNet.swift
-//  BitcoinKit
 //
-//  Created by Sun on 2024/8/21.
+//  Created by Sun on 2018/7/18.
 //
 
 import Foundation
@@ -10,7 +9,11 @@ import Foundation
 import BitcoinCore
 
 class TestNet: INetwork {
-    private static let testNetDiffDate = 1_329_264_000 // February 16th 2012
+    // MARK: Static Properties
+
+    private static let testNetDiffDate = 1329264000 // February 16th 2012
+
+    // MARK: Properties
 
     let bundleName = "Bitcoin"
 
@@ -18,14 +21,14 @@ class TestNet: INetwork {
     let privateKey: UInt8 = 0xEF
     let scriptHash: UInt8 = 0xC4
     let bech32PrefixPattern = "tb"
-    let xPubKey: UInt32 = 0x0435_87CF
-    let xPrivKey: UInt32 = 0x0435_8394
-    let magic: UInt32 = 0x0B11_0907
+    let xPubKey: UInt32 = 0x043587CF
+    let xPrivKey: UInt32 = 0x04358394
+    let magic: UInt32 = 0x0B110907
     let port = 18333
     let coinType: UInt32 = 1
     let sigHash: SigHashType = .bitcoinAll
     var syncableFromApi = true
-    var blockchairChainId = "bitcoin/testnet"
+    var blockchairChainID = "bitcoin/testnet"
 
     let dnsSeeds = [
         "testnet-seed.bitcoin.petertodd.org", // Peter Todd
