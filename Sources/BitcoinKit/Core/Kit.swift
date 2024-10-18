@@ -1,7 +1,8 @@
 //
 //  Kit.swift
+//  BitcoinKit
 //
-//  Created by Sun on 2018/8/10.
+//  Created by Sun on 2024/8/15.
 //
 
 import Foundation
@@ -9,7 +10,7 @@ import Foundation
 import BitcoinCore
 import HDWalletKit
 import Hodler
-import WWToolKit
+import SWToolKit
 
 // MARK: - Kit
 
@@ -211,7 +212,7 @@ public class Kit: AbstractKit {
         let apiTransactionProvider: IApiTransactionProvider?
         switch networkType {
         case .mainNet:
-            let hsBlockHashFetcher = WWBlockHashFetcher(
+            let hsBlockHashFetcher = SWBlockHashFetcher(
                 wwURL: "https://api.blocksdecoded.com/v1/blockchains/bitcoin",
                 logger: logger
             )

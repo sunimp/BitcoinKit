@@ -10,7 +10,7 @@ import Combine
 
 import BitcoinCore
 import HDWalletKit
-import WWToolKit
+import SWToolKit
 
 class Manager {
     static let shared = Manager()

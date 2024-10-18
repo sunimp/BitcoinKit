@@ -10,7 +10,7 @@ import Foundation
 import BitcoinCore
 import BitcoinKit
 import HDWalletKit
-import WWToolKit
+import SWToolKit
 
 class BitcoinAdapter: BaseAdapter {
     let bitcoinKit: Kit

@@ -1,7 +1,8 @@
 //
 //  RegTest.swift
+//  BitcoinKit
 //
-//  Created by Sun on 2018/8/23.
+//  Created by Sun on 2024/8/15.
 //
 
 import Foundation
